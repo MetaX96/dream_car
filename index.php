@@ -52,6 +52,70 @@
 			</div>
 			
 			<div class="panel-body" style="font-size: 0.9vw;">
+			<?php
+				session_start();
+				mysql_connect("localhost","metax55","4e2esysy");
+				mysql_select_db("metax55_dreamcar");
+				
+				function filtruj($zmienna)
+				{
+					if(get_magic_quotes_gpc())
+						$zmienna = stripslashes($zmienna); // usuwamy slashe
+
+					// usuwamy spacje, tagi html oraz niebezpieczne znaki
+					return mysql_real_escape_string(htmlspecialchars(trim($zmienna)));
+				}
+
+				if (isset($_POST['loguj']))
+				{
+					$login = filtruj($_POST['login']);
+					$haslo = filtruj($_POST['haslo']);
+					$ip = filtruj($_SERVER['REMOTE_ADDR']);
+
+					// sprawdzamy czy login i hasło są dobre
+					if ($login == 'MetaX' || $login == 'Ballas') {
+						if (mysql_num_rows(mysql_query("SELECT login, password FROM Users WHERE login = '".$login."' AND password = '".$haslo."';")) > 0)
+						{
+							$_SESSION['zalogowany'] = true;
+							$_SESSION['login'] = $login;
+						}
+					} else
+					{
+						if (mysql_num_rows(mysql_query("SELECT login, password FROM Users WHERE login = '".$login."' AND password = '".md5($haslo)."';")) > 0)
+						{
+							$_SESSION['zalogowany'] = true;
+							$_SESSION['login'] = $login;
+						}
+						else echo "Wpisano złe dane.";
+					}
+				}
+				
+				if ($_SESSION['zalogowany'] == true) {
+					echo "Witaj ".$_SESSION['login']."!";
+					echo '<form action="index.php" method="POST">';
+					echo '<br><br><button type="submit" name="wyloguj" class="btn btn-primary"> Wyloguj</button> </form>';
+					if (isset($_POST['wyloguj'])){
+						$_SESSION['zalogowany'] = false;
+						header('Location: index.php');
+					}
+				} else 
+				{
+					echo '
+						<form action="index.php" method="POST">
+							<div class="form-group">
+								<a href="register.php">Zarejestruj się</a><br><br>
+								<label for="exampleInputEmail1">LOGIN</label>
+								<input type="text" class="form-control" name="login" placeholder="Login">
+							</div>
+						  <div class="form-group">
+								<label for="exampleInputPassword1">HASŁO</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło" name="haslo">
+						  </div>
+						  <button type="submit" name="loguj" class="btn btn-primary">Zaloguj</button>
+						</form>
+						';
+				}
+			?>
 
 		  </div>
 		</div>

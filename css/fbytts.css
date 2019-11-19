@@ -1,0 +1,15 @@
+﻿.social-networks a{background-image:url(images/sprite.png);border-radius:3px;display:inline-block;height:48px;margin:0 7px 10%;text-indent:-9999px;width:48px}
+.social-networks .fb{background-color:#4862a3;background-position:0 -102px}
+.social-networks .fb:hover{background-color:#4f6bb3}
+.social-networks .yt{background-color:#cd322c;background-position:-48px -102px}
+.social-networks .yt:hover{background-color:#db342e}
+.social-networks .ts{background-color:#8595bb;background-position:-96px -102px}
+.social-networks .ts:hover{background-color:#8fa1c9}
+.server-state{height:102px;position:relative}
+.social-networks a{background-image:url(../images/sprite.png);border-radius:3px;display:inline-block;height:48px;margin:0 14px;text-indent:-9999px;width:48px}
+.social-networks .fb{background-color:#4862a3;background-position:0 -102px}
+.social-networks .fb:hover{background-color:#4f6bb3}
+.social-networks .yt{background-color:#cd322c;background-position:-48px -102px}
+.social-networks .yt:hover{background-color:#db342e}
+.social-networks .ts{background-color:#8595bb;background-position:-96px -102px}
+.social-networks .ts:hover{background-color:#8fa1c9}

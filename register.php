@@ -56,8 +56,9 @@
 				<b>Email:</b> <input type="text" name="email"><br><br>
 				<input type="submit" value="Utwórz konto" name="rejestruj" class="btn btn-primary"><br><br>
 				<?php
-					mysql_connect("localhost","metax55","4e2esysy");
-					mysql_select_db("metax55_dreamcar");
+					require('mysql_connect.php');
+					mysql_connect($servername, $username, $password);
+					mysql_select_db($dbname);
 
 					function filtruj($zmienna)
 					{

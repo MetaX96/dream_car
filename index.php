@@ -54,8 +54,10 @@
 			<div class="panel-body" style="font-size: 0.9vw;">
 			<?php
 				session_start();
-				mysql_connect("localhost","metax55","4e2esysy");
-				mysql_select_db("metax55_dreamcar");
+				require('mysql_connect.php');
+				mysql_connect($servername, $username, $password);
+				mysql_select_db($dbname);
+				
 				
 				function filtruj($zmienna)
 				{

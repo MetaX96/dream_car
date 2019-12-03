@@ -48,24 +48,24 @@
 
         <div style="width: 100%;" class="panel panel-default slideUp">
           <div class="panel-heading">
-                <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>Volvo V40</h3>
+                <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>Audi RS7</h3>
           </div>
 		  <div class="panel-body">
             <div style="color: #d7ba40; font-size: 0.9vw; width: 40%; margin-right: 0px; float:left;">
-				<img src="volvoV40.jpg" alt="Volvo V40" style="width:100%">
+				<img src="audiRS7.jpg" alt="Audi A6" style="width:100%">
             </div>
 			<div style="color: #d7ba40; font-size: 0.9vw; width: 20%; float:left; margin: 5%; margin-top: 1%;">
 				 <ul>
-    				<li>Marka pojazdu: 		Volvo</li>
-    				<li>Model pojazdu: 		V40</li>
-    				<li>Rok produkcji:		2016</li>
-    				<li>Pojemność skokowa:	1 969 cm3</li>
+    				<li>Marka pojazdu: 		Audi</li>
+    				<li>Model pojazdu: 		RS7</li>
+    				<li>Rok produkcji:		2019</li>
+    				<li>Pojemność skokowa:	3 996 cm3</li>
     				<li>Rodzaj paliwa:		Benzyna</li>
-    				<li>Moc:				122 KM</li>
-    				<li>Skrzynia biegów:	manualna</li>
-    				<li>Napęd:				przednie koła</li>
-    				<li>Typ:				Kombi</li>
-    				<li>Liczba miejsc:		5</li>
+    				<li>Moc:				600 KM</li>
+    				<li>Skrzynia biegów:	Automatyczna hydrauliczna</li>
+    				<li>Napęd:				4x4(stały)</li>
+    				<li>Typ:				Sedan</li>
+    				<li>Liczba miejsc:		4</li>
  				</ul>
             </div>
 			<div style="color: red; font-size: 0.9vw; float: right; width: 20%;">

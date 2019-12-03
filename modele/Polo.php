@@ -48,23 +48,24 @@
 
         <div style="width: 100%;" class="panel panel-default slideUp">
           <div class="panel-heading">
-                <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>Volvo V40</h3>
+                <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>VW Polo</h3>
           </div>
 		  <div class="panel-body">
             <div style="color: #d7ba40; font-size: 0.9vw; width: 40%; margin-right: 0px; float:left;">
-				<img src="volvoV40.jpg" alt="Volvo V40" style="width:100%">
+				<img src="polo.jpg" alt="VW Passat" style="width:100%">
             </div>
 			<div style="color: #d7ba40; font-size: 0.9vw; width: 20%; float:left; margin: 5%; margin-top: 1%;">
 				 <ul>
-    				<li>Marka pojazdu: 		Volvo</li>
-    				<li>Model pojazdu: 		V40</li>
-    				<li>Rok produkcji:		2016</li>
-    				<li>Pojemność skokowa:	1 969 cm3</li>
+    				<li>Marka pojazdu: 		VW</li>
+    				<li>Model pojazdu: 		Polo</li>
+					<li>Wersja:				VI (2017-)</li>
+    				<li>Rok produkcji:		2019</li>
+    				<li>Pojemność skokowa:	2 000 cm3</li>
     				<li>Rodzaj paliwa:		Benzyna</li>
-    				<li>Moc:				122 KM</li>
-    				<li>Skrzynia biegów:	manualna</li>
-    				<li>Napęd:				przednie koła</li>
-    				<li>Typ:				Kombi</li>
+    				<li>Moc:				200 KM</li>
+    				<li>Skrzynia biegów:	Automatyczna dwusrzęgłowa (DCT, DSG)</li>
+    				<li>Napęd:				Na przednie koła</li>
+    				<li>Typ:				Kompakt</li>
     				<li>Liczba miejsc:		5</li>
  				</ul>
             </div>

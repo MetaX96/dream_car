@@ -45,7 +45,6 @@
 			</div>
 		  </div>
 		</nav>
-
         <div style="width: 100%;" class="panel panel-default slideUp">
           <div class="panel-heading">
                 <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>Renault MEGANE</h3>
@@ -54,7 +53,7 @@
             <div style="color: #d7ba40; font-size: 0.9vw; width: 40%; margin-right: 0px; float:left;">
 				<img src="megane.png" alt="Megane" style="width:100%">
             </div>
-			<div style="color: #d7ba40; font-size: 0.9vw; width: 50%; float:left; margin: 5%; margin-top: 1%;">
+			<div style="color: #d7ba40; font-size: 0.9vw; width: 20%; float:left; margin: 5%; margin-top: 1%;">
 				 <ul>
     				<li>Marka pojazdu: 		Renault</li>
     				<li>Model pojazdu: 		Megane</li>
@@ -69,7 +68,35 @@
     				<li>Liczba miejsc:		5</li>
  				</ul>
             </div>
+			<div style="color: red; font-size: 0.9vw; float: right; width: 20%;">
+				<?php
+				require('../mysql_connect.php');
 
+				// Create connection
+				$conn = new mysqli($servername, $username, $password, $dbname);
+				// Check connection
+				if ($conn->connect_error) {
+					die("Connection failed: " . $conn->connect_error);
+				}
+
+				$sql = "SELECT * FROM Modele";
+				$result = $conn->query($sql);
+				
+				$x = $_SERVER['PHP_SELF'];
+				$y = substr($x, 17); 
+				$z = substr($y, 0, strpos($y, ".php"));
+				
+				while($row = $result->fetch_assoc()) {
+														if ($row['Nazwa'] == $z){
+															echo 'Cena: '.$row['cena'].' PLN<br>';
+															echo 'Dostepność: '.$row['ilosc'].' sztuk.<br><br><br>';
+														}
+				}
+				echo 'Jesteś zainteresowany?<br>
+					Prosimy o kontakt.<br>
+					<a href="http://szefjesttylkojeden.gbzl.pl/dreamcar/kontakt.php" target="_blank">KLIKNIJ TUTAJ</a>';
+				?>
+			</div>
 		  </div>
 		</div>
 

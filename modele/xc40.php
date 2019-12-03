@@ -48,23 +48,23 @@
 
         <div style="width: 100%;" class="panel panel-default slideUp">
           <div class="panel-heading">
-                <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>Volvo V40</h3>
+                <h3 class="panel-title" style="font-size: 0.9vw;"><span aria-hidden="true"></span>Volvo XC40</h3>
           </div>
 		  <div class="panel-body">
             <div style="color: #d7ba40; font-size: 0.9vw; width: 40%; margin-right: 0px; float:left;">
-				<img src="volvoV40.jpg" alt="Volvo V40" style="width:100%">
+				<img src="volvoXC40.jpg" alt="Volvo V60" style="width:100%">
             </div>
 			<div style="color: #d7ba40; font-size: 0.9vw; width: 20%; float:left; margin: 5%; margin-top: 1%;">
 				 <ul>
     				<li>Marka pojazdu: 		Volvo</li>
-    				<li>Model pojazdu: 		V40</li>
-    				<li>Rok produkcji:		2016</li>
-    				<li>Pojemność skokowa:	1 969 cm3</li>
-    				<li>Rodzaj paliwa:		Benzyna</li>
-    				<li>Moc:				122 KM</li>
+    				<li>Model pojazdu: 		XC40</li>
+    				<li>Rok produkcji:		2019</li>
+    				<li>Pojemność skokowa:	1 998 cm3</li>
+    				<li>Rodzaj paliwa:		Diesel</li>
+    				<li>Moc:				150 KM</li>
     				<li>Skrzynia biegów:	manualna</li>
-    				<li>Napęd:				przednie koła</li>
-    				<li>Typ:				Kombi</li>
+    				<li>Napęd:				4x4</li>
+    				<li>Typ:				SUV</li>
     				<li>Liczba miejsc:		5</li>
  				</ul>
             </div>

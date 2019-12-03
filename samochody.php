@@ -11,16 +11,6 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM Modele";
 $result = $conn->query($sql);
 
-//Powiadomienia mail
-$dane = "MEFARIUS.EU"; //Dostajac meila ten napis bedzie widnial w rubryce 'Od kogo?'
-$headers1='MIME-Version: 1.0'."\n"; //nie ruszaj!
-$headers1.='Content-type: text/html; charset=UTF-8'."\n"; //nie ruszaj!
-$headers1.='from: <'.$dane.">\n"; //nie ruszaj!
-$data=date("Y-m-d H:i"); // nie ruszaj!
-$email = "kontakt@mefarius.eu";  // twoj email
-$czy_email = "nie"; // Chcesz otrzymywac powiadomienia email o zakupionych uslugach? Wpisz tak lub nie.
-
-
 
 //Dane do strony
 $current = "samochody.php"; //strona glowna sms shopa np. ?page_id=4 lub sms.php

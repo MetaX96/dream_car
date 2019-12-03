@@ -75,21 +75,13 @@
 					$ip = filtruj($_SERVER['REMOTE_ADDR']);
 
 					// sprawdzamy czy login i hasło są dobre
-					if ($login == 'MetaX' || $login == 'Ballas') {
-						if (mysql_num_rows(mysql_query("SELECT login, password FROM Users WHERE login = '".$login."' AND password = '".$haslo."';")) > 0)
-						{
-							$_SESSION['zalogowany'] = true;
-							$_SESSION['login'] = $login;
-						}
-					} else
-					{
+
 						if (mysql_num_rows(mysql_query("SELECT login, password FROM Users WHERE login = '".$login."' AND password = '".md5($haslo)."';")) > 0)
 						{
 							$_SESSION['zalogowany'] = true;
 							$_SESSION['login'] = $login;
 						}
 						else echo "Wpisano złe dane.";
-					}
 				}
 				
 				if ($_SESSION['zalogowany'] == true) {
@@ -106,6 +98,7 @@
 						<form action="index.php" method="POST">
 							<div class="form-group">
 								<a href="register.php">Zarejestruj się</a><br><br>
+								<a href="resetpass.php">Przypomnij hasło</a><br><br>
 								<label for="exampleInputEmail1">LOGIN</label>
 								<input type="text" class="form-control" name="login" placeholder="Login">
 							</div>

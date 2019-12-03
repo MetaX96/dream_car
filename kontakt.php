@@ -61,10 +61,12 @@
 			  <fieldset>
 				<legend>Wiadomość do Właścicieli salonu.</legend>
 				<div class="form-group">
-				  <label for="select" class="col-lg-2 control-label">Rodzaj problemu:</label>
+				  <label for="select" class="col-lg-2 control-label">TEMAT:</label>
 				  <div class="col-lg-10">
 					<select class="form-control" id="select">
-						<option>Błąd na stronie</option>
+						<option>Kontakt w sprawie kupna auta.</option>
+						<option>Chęć umówienia się na jazdę próbną.</option>
+						<option>Udzielenie szczegółowych informacji nt. danego modelu</option>
 						<option>Problem z wyświetlaniem zawartości</option>
 						<option>Brakujący model pojazdu</option>
 						<option>Inne</option>
